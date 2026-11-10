@@ -1,0 +1,51 @@
+{
+  "name": "@mol-x/manus-cli",
+  "version": "0.1.0",
+  "description": "Local Manus AI agent runner — Claude/Cursor-style CLI with first-class Herdr support",
+  "type": "module",
+  "bin": {
+    "manus": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "manus",
+    "manus-ai",
+    "cli",
+    "agent",
+    "herdr",
+    "ai"
+  ],
+  "author": "mol-x",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mol-x/manus-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mol-x/manus-cli/issues"
+  },
+  "homepage": "https://github.com/mol-x/manus-cli#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^13.1.0",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
